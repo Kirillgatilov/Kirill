@@ -1,0 +1,92 @@
+/* Common styles for both desktop and mobile */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Header styles */
+
+.header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items on small screens */
+    padding-top: 23px;
+    padding-left: 0; /* Adjust as needed */
+}
+
+.header-button-1,
+.header-button-2 {
+    margin: 15px 0;
+    /* Other styles remain unchanged */
+}
+
+/* Main styles */
+
+.main {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    margin-top: 60px; /* Adjust as needed */
+}
+
+.main-img {
+    margin-left: 0; /* Reset margin for mobile */
+}
+
+/* Section styles */
+
+/* Add media query for larger screens if needed */
+
+.section {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+/* Section-main styles */
+
+/* Add media query for larger screens if needed */
+
+/* Footer styles */
+
+.footer {
+    height: auto; /* Adjust as needed */
+}
+
+.footer-block-2,
+.footer-block-3 {
+    padding-left: 10px; /* Adjust as needed */
+}
+
+/* Media queries for smaller screens */
+
+@media only screen and (max-width: 768px) {
+    .header-nav {
+        padding-left: 0; /* Adjust as needed */
+    }
+
+    .header-button-1,
+    .header-button-2 {
+        margin-left: 0; /* Adjust as needed */
+    }
+
+    .main {
+        margin-top: 30px; /* Adjust as needed */
+    }
+
+    .footer-block-2,
+    .footer-block-3 {
+        padding-left: 10px; /* Adjust as needed */
+    }
+}
